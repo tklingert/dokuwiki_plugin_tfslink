@@ -1,0 +1,36 @@
+/* tfs link plugin styles */
+
+/* - links */
+.dokuwiki a.urltfsworkitem {
+    background-image: url(../../plugins/tfslink/images/workitem-link.png) !important;
+}
+
+/* - wizard: add work item link */
+#addworkitemlink__wiz {
+    width: 451px;
+}
+
+#addworkitemlink__wiz fieldset {
+    width: 401px;
+    text-align: left;
+}
+#addworkitemlink__wiz input {
+    margin: 0 0.1em 0 0;
+}
+#addworkitemlink__wiz input#workitemid {
+    width: 40px;
+}
+#addworkitemlink__wiz input#title {
+    margin: 0 0.6em;
+    width: 170px;
+}
+#addworkitemlink__wiz select#projectcollection {
+    margin: 0 0.6em;
+    width: 375px;
+}
+#addworkitemlink__wiz label {
+    margin: 0 0.6em;
+}
+#addworkitemlink__wiz input#addworkitemlink__insert {
+    margin: 0.5em 3px 1em 3px;
+}

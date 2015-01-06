@@ -1,0 +1,7 @@
+﻿base tfslink
+author Thorsten Klingert
+email Thorsten.Klingert@gmail.com
+date 2015-01-04
+name TFS link Plugin
+desc Provides a convenience syntax for links to tfs objects
+url http://www.dokuwiki.org/plugin:tfslink
