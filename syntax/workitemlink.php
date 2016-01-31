@@ -18,7 +18,7 @@ class syntax_plugin_tfslink_workitemlink extends DokuWiki_Syntax_Plugin {
         $this->Lexer->addSpecialPattern('\[\[wi>.+?\]\]', $mode,'plugin_tfslink_workitemlink');
     }
 
-    function handle($match, $state, $pos, &$handler) {
+    function handle($match, $state, $pos, Doku_Handler $handler) {
         $data = array();
 
         /* samples:
@@ -57,7 +57,7 @@ class syntax_plugin_tfslink_workitemlink extends DokuWiki_Syntax_Plugin {
 
         return $data;
     }
-    function render($mode, &$renderer, $data) {
+    function render($mode, Doku_Renderer $renderer, $data) {
         if($mode != 'xhtml') return false;
 
         if (isset($data['error']))
